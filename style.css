@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+
+    font-family: "Gabarito", sans-serif;
+
+}
+
+.Udemy__Navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid black 1px;
+    gap: 10px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.Udemy__Navbar__head {
+    color: #A435F0;
+}
+
+.Udemy__Navbar__search {
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 30px;
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    
+}
+
+.Udemy__Navbar__search input {
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.Udemy__Navbar__search input:focus {
+    outline: none;
+}
+
+.Udemy__Navbar__right {
+    display: flex;
+    gap: 20px;
+}
+
+.Udemy__Subnavbar {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    border-bottom: solid black 1px;
+}
+
+.Udemy__Subnavbar p {
+    background-color: #A435F0;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    border: solid #A435F0 1px;
+    cursor: pointer;
+}
+.Udemy__Subnavbar p:hover{
+  transition: 1s;
+  background-color: transparent;
+  color: black;
+  border: solid #A435F0 1px;
+}
+.Udemy__header{
+    position: relative;
+}
+.Udemy__header img {
+    width: 100%;
+}
+.Udemy__header__saleimage{
+    width: 35%;
+    border: solid black 1px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.mylearning{
+    position: relative;
+    cursor: pointer;
+}
+.mylearning__popup{
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    padding: 15px;
+    top: 150%;
+    right: 0;
+    display: none;
+}
+.mylearning:hover .mylearning__popup{
+     display: block;
+}
+.Udemy_Recommended {
+    padding: 10px;
+
+}
+
+.Udemy_Recommended__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.Udemy_Recommended__card {
+    width: 250px;
+}
+
+.Udemy_Recommended__card img {
+    width: 100%;
+    height: 50%;
+}
+
+.Udemy__Topics {
+    padding: 10px;
+
+}
+
+.Udemy__Topics__container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+
+}
+
+.Udemy__Topics__container p {
+    border: solid grey 2px;
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 25%;
+}
+
+.Udemy__popular__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.Udemy__popular__card {
+    width: 300px;
+}
+
+.Udemy__popular__card img {
+    width: 100%;
+    height: 50%;
+}
+.Udemy__footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+}
+.Udemy__footer__one{
+    display: flex;
+    gap: 10px;
+}
+.Udemy__footer__two{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+}
+.Udemy__footer__one p{
+  margin: 20px;
+}
